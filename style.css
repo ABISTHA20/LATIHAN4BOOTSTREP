@@ -1,49 +1,48 @@
 .rpl-logo{
-    width: 150px;
+  width: 150px;
 }
 
 .rpl-dpr{
-    width: 500px;
+  width: 500px;
 }
 
 .Bg-Background{
-    background-color: #ec2c2c;
+  background-color: #ec2c2c;
 }
 
 .teks-gambar{
-    color: black;
+  color: black;
 }
 .teks1{
-    color: #f8f4f4;
+  color: #f8f4f4;
 }
 .background{
-    background-color: black;
+  background-color: black;
 }
 
 .container {
-    width: 100%;
-    padding-right: 15px;   /* jarak dalam kanan */
-    padding-left: 15px;    /* jarak dalam kiri */
-    margin-right: auto;    /* biar ke tengah */
-    margin-left: auto;     /* biar ke tengah */
-  }
+  width: 100%;
+  padding-right: 15px;   /* jarak dalam kanan */
+  padding-left: 15px;    /* jarak dalam kiri */
+  margin-right: auto;    /* biar ke tengah */
+  margin-left: auto;     /* biar ke tengah */
+}
 
-  .custom-font{
-    font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
-  }
+.custom-font{
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  html {
-    scroll-behavior: smooth; /* supaya autoscroll halus */
-  }
-  .navbar-nav .nav-link.active {
-    color: #fff !important;          /* teks putih */
-    background-color: #007bff;       /* biru */
-    border-radius: 5px;              /* sudut halus */
-    padding: 5px 10px;
-  }
-  
-  body {
-    position: relative;
-  }
-  
+html {
+  scroll-behavior: smooth; /* supaya autoscroll halus */
+}
+.navbar-nav .nav-link.active {
+  color: #fff !important;          /* teks putih */
+  background-color: #007bff;       /* biru */
+  border-radius: 5px;              /* sudut halus */
+  padding: 5px 10px;
+}
+
+body {
+  position: relative;
+}
