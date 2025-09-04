@@ -1,0 +1,34 @@
+.rpl-logo{
+    width: 150px;
+}
+
+.rpl-dpr{
+    width: 500px;
+}
+
+.Bg-Background{
+    background-color: #ec2c2c;
+}
+
+.teks-gambar{
+    color: black;
+}
+.teks1{
+    color: #f8f4f4;
+}
+.background{
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;   /* jarak dalam kanan */
+    padding-left: 15px;    /* jarak dalam kiri */
+    margin-right: auto;    /* biar ke tengah */
+    margin-left: auto;     /* biar ke tengah */
+  }
+
+  .custom-font{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
