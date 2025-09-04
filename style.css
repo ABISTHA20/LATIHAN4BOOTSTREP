@@ -32,3 +32,18 @@
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
   }
+
+  html {
+    scroll-behavior: smooth; /* supaya autoscroll halus */
+  }
+  .navbar-nav .nav-link.active {
+    color: #fff !important;          /* teks putih */
+    background-color: #007bff;       /* biru */
+    border-radius: 5px;              /* sudut halus */
+    padding: 5px 10px;
+  }
+  
+  body {
+    position: relative;
+  }
+  

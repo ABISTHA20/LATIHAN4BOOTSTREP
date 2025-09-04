@@ -12,9 +12,11 @@
     <title>WAKIL RAKYAT</title>
     <script src="asset/js/jquery.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="70">
 
     <header>
         
@@ -30,16 +32,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#Home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Kinerja">Kinerja</a>
+                  <a class="nav-link" href="#Kinerja">Kinerja </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Gaji dan Tunjangan">Gaji dan Tunjangan</a>
+                  <a class="nav-link" href="#GajiTunjangan">Gaji dan Tunjangan </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Kasus">Kasus</a>
+                  <a class="nav-link" href="#Kasus">Kasus </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Kontak">Kontak</a>
@@ -108,7 +110,7 @@
             <P>Kinerja DPR untuk saat ini dibilang mengecewakan seluruh rakyat indonesia, karna dengan beberapa peraturan yg dibuat, dan kenaikan gaji yg sangat tidak masuk akal sedangkan rakyat nya banyak ygs susah</P>
         </div>
     </section>
-    <section id="Gaji dan Tunjangan">
+    <section id="GajiTunjangan">
         <div class="container"><br><br><br><br><br>
             <h2>Gaji dan Tunjangan DPR RI</h2>
             <img src="asset/img/tunjangan.png" class="rpl-dpr">
@@ -167,15 +169,37 @@
         <h1>KONTAK</h1>
         <p>Kontakwhatsapp :<a href="https://api.whatsapp.com/send/?phone=%2B6281226382590&text&type=phone_number&app_absent=0"> +621226382590</a></p>
         <P>email :<a href="https://mail.google.com/mail/u/0/#chat/home"> abistha.20232001@student.atmi.ac.id</a></P>
-    </section>
-</section>
+    </section><br><br><br><br>
 
+    <!-- Canvas untuk Chart -->
+<div class="container">
+  <h3>Statistik Kinerja DPR</h3>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+</div>
 
+<script>
+var xValues = ["Legislasi", "Anggaran", "Pengawasan", "Korupsi"];
+var yValues = [55, 49, 44, 24];
+var barColors = ["red", "green","blue","orange"];
 
-
-
-</section>
-
+new Chart(document.getElementById("myChart"), {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: { display: false },
+    title: {
+      display: true,
+      text: "Kinerja DPR RI"
+    }
+  }
+});
+</script>
 
 
   </body>
